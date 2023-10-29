@@ -1,0 +1,26 @@
+{
+    "name": "Python with AWS Backend",
+    "dockerFile": "Dockerfile",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.pythonPath": "/usr/local/bin/python",
+                "python.linting.pylintEnabled": true,
+                "python.linting.enabled": true,
+                "python.format.sortImports": true,
+                "python.testing.pytestArgs": ["tests"]
+            },
+            "extensions": [
+              "ms-python.python",
+              "ms-azuretools.vscode-docker",
+              "kamilturek.vscode-pyproject-toml-snippets",
+              "coenraads.bracket-pair-colorizer-2",
+              "streetsidesoftware.code-spell-checker",
+              "ms-python.pylint"
+            ]
+        }
+    },
+    "remoteUser": "myuser",
+    "postCreateCommand": "poetry install"
+}
+
